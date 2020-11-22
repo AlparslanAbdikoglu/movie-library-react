@@ -137,7 +137,7 @@ const SearchBar = () => {
         ref={inputFocus}
         value={input}
         state={state}
-        placeholder="Search for a movie..."
+        placeholder="Keress a sorozatra vagy filmre..."
       />
     </Form>
   );

@@ -172,7 +172,7 @@ const App = ({ init, isLoading }) => {
               <Route
                 path="/404"
                 component={() => (
-                  <NotFound title="Upps!" subtitle={`This doesn't exist...`} />
+                  <NotFound title="Upps!" subtitle={`Ezt nem találtam meg...`} />
                 )}
               />
               <Route
@@ -181,7 +181,7 @@ const App = ({ init, isLoading }) => {
               />
               <Route
                 component={() => (
-                  <NotFound title="Upps!" subtitle={`This doesn't exist...`} />
+                  <NotFound title="Upps!" subtitle={`Ezt nem találtam meg...`} />
                 )}
               />
             </Switch>

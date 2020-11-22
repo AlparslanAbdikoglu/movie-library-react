@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import store from './store';
+import store from './src/store';
 import { ThemeProvider } from 'styled-components';
-import theme from './utils/theme';
-import GlobalStyle from './utils/globals';
-import App from './containers/App';
+import theme from './src/utils/theme';
+import GlobalStyle from './src/utils/globals';
+import App from './src/containers/App';
 
 import '../node_modules/react-modal-video/scss/modal-video.scss';
 import '../node_modules/slick-carousel/slick/slick.css';
@@ -18,12 +18,12 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <Fragment>
         <Helmet>
-          <title>Movie Library</title>
+          <title>soribazis</title>
           <meta
             name="description"
-            content="A Movie Library where you can check all your favorite movies, as well as the cast of it, and so mucnh more! Made with ❤️ by Fidalgo"
+            content="testelek"
           />
-          <link rel="canonical" href="https://movies.fidalgo.dev" />
+          <link rel="canonical" href="" />
         </Helmet>
         <App />
         <GlobalStyle />
@@ -32,3 +32,5 @@ ReactDOM.render(
   </Provider>,
   document.querySelector('#root')
 );
+
+const port = process.env.PORT || 8080;
